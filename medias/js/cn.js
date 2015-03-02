@@ -6,37 +6,37 @@ var currentScroll = 0,
         'id': 1,
         'title': '',
         'content': '所遇见的美好，都在转身的一瞬间，殒灭！',
-        'author': 'HoungKing Hsi'
+        'author': 'Houngking Hsi'
     }, {
         'id': 2,
         'title': '',
         'content': '与你相见，才知 风玲的声音如此动听。',
-        'author': 'HoungKing Hsi'
+        'author': 'Houngking Hsi'
     }, {
         'id': 3,
         'title': '',
         'content': '人生到处知何似 应似飞鸿踏雪泥',
-        'author': 'HoungKing Hsi'
+        'author': 'Houngking Hsi'
     }, {
         'id': 4,
         'title': '',
         'content': '程序 数学 游戏 物理 几何 都是我的最爱 ',
-        'author': 'HoungKing Hsi'
+        'author': 'Houngking Hsi'
     }, {
         'id': 5,
         'title': '',
         'content': '我还在盼你一笑如旧故，我若取残年偿你三分温存，一生倒也足够 悠悠 寒山 轻舟。',
-        'author': 'HoungKing Hsi'
+        'author': 'Houngking Hsi'
     }, {
         'id': 6,
         'title': '',
         'content': '心中的女子 天生丽质 夜晚披羽毛出行 还是纤细不禁风 ...',
-        'author': 'HoungKing Hsi'
+        'author': 'Houngking Hsi'
     }, {
         'id': 7,
         'title': '',
         'content': '业精于勤而荒于嬉，行成于思而毁于随。',
-        'author': 'HoungKing Hsi'
+        'author': 'Houngking Hsi'
     }];
 
 $(function(){
