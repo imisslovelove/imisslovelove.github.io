@@ -39,6 +39,6 @@ $(function(){
     _.showWord($iAbout, '偶尔，他也总是自欺欺人！', 'https://imisslovelove.github.io/cn/about');
     _.showWord($iTags, '他却用温暖的内心感染着身边的每个人', 'https://imisslovelove.github.io/cn/tags');
     _.showWord($iEn, '然后，他在你的心中驻留。', 'https://imisslovelove.github.io/en');
-    _.showWord($iHoungking, '阳光便成为你一生的行程。', 'https://imisslovelove.github.io/houngking');
+    _.showWord($iHoungking, '阳光便成为你一生的行程。', 'http://houngking.ml');
 
 });
