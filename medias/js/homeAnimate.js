@@ -26,6 +26,7 @@ $(function(){
         $('#w-about').fadeIn(600);
         $('#w-tags').fadeIn(1000);
         $('#w-none').fadeIn(1400);
+        $('#w-houngking').fadeIn(1800);
         $('#word').fadeIn(300, function() {
             $(this).empty().append('当你驻足这里，便是故事！');
         });
