@@ -88,7 +88,7 @@ $(function(){
 	
 	//show original
 	point.mouseover(function() {
-		iPost.fadeIn(150);
+		iPost.fadeIn(200);
 		iAbout.fadeIn(600);
 		iTags.fadeIn(1000);
 		iEn.fadeIn(1400);
