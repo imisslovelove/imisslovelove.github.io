@@ -1,43 +1,42 @@
 /**
  * Created by houngking on 10/14/2014.
- * Updated by houngking on 12/13/2014. -- Add the show/hide function in the post list.
  */
 var currentScroll = 0,
     allWords = [{
         'id': 1,
         'title': '',
-        'content': '所遇见的美好，都在转身的一瞬间，殒灭！',
-        'author': 'Houngking Hsi'
+        'content': 'Do one thing at a time, and do well.',
+        'author': ''
     }, {
         'id': 2,
         'title': '',
-        'content': '与你相见，才知 风玲的声音如此动听。',
-        'author': 'Houngking Hsi'
+        'content': 'Learn and live',
+        'author': ''
     }, {
         'id': 3,
         'title': '',
-        'content': '人生到处知何似 应似飞鸿踏雪泥',
-        'author': 'Houngking Hsi'
+        'content': 'None is of freedom or of life deserving unless he daily conquers it anew.',
+        'author': 'Erasmus'
     }, {
         'id': 4,
         'title': '',
-        'content': '程序 数学 游戏 物理 几何 都是我的最爱 ',
-        'author': 'Houngking Hsi'
+        'content': 'There is no such thing as a great talent without great will - power',
+        'author': 'Balzac'
     }, {
         'id': 5,
         'title': '',
-        'content': '我还在盼你一笑如旧故，我若取残年偿你三分温存，一生倒也足够 悠悠 寒山 轻舟。',
-        'author': 'Houngking Hsi'
+        'content': 'No pain, no gain',
+        'author': ''
     }, {
         'id': 6,
         'title': '',
-        'content': '心中的女子 天生丽质 夜晚披羽毛出行 还是纤细不禁风 ...',
-        'author': 'Houngking Hsi'
+        'content': 'Cease to struggle and you cease to live.',
+        'author': 'Thomas Carlyle'
     }, {
         'id': 7,
         'title': '',
-        'content': '业精于勤而荒于嬉，行成于思而毁于随。',
-        'author': 'Houngking Hsi'
+        'content': 'You have to believe in yourself. That\'s the secret of success. ',
+        'author': 'Charles Chaplin'
     }],
     _ = {
         bindToggle: function () {
@@ -46,12 +45,11 @@ var currentScroll = 0,
                 $('.list_' + year).toggle(200);
             });
         },
-        bindHoverBeautifulWords: function() {
+        bindShowBeautifulWords: function() {
             var self = $('#logo');
             self.addClass('logo-in')
                 .mouseover(function () {
                 var ranWord = Math.floor(Math.random() * allWords.length), wordDom = '<div class="logo-word"><div class="logo-title">' + allWords[ranWord]['title'] + '</div><div class="logo-content"><span></span>' + allWords[ranWord]['content'] + '</div><div class="logo-author">' + allWords[ranWord]['author'] + '</div></div>';
-        
                 self.removeClass('logo-in').addClass('logo-out');
                 if ($('.logo-word').length <= 0)
                     setTimeout(function(){self.append(wordDom);}, 500);
@@ -72,7 +70,7 @@ $(function(){
         myScroll();
     });
 
-    _.bindHoverBeautifulWords();
+    _.bindShowBeautifulWords();
     _.bindToggle();
 });
 
