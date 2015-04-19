@@ -4,7 +4,6 @@
  * Updated by HoungKing on 12/11/2014.
  * Updated by HoungKing on 01/17/2015.// add the mobile device and the adapt layout
  */
-
 $(function(){
 	var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-en'), word = $('#word');
 	
@@ -43,6 +42,10 @@ $(function(){
 				} break;
 				case '../medias/img/05.jpg': {
 					word.append($('<img/>', {'src': '../medias/img/5_start.png'}))
+						.css({'top':'500px'});
+				} break;
+				case '../medias/img/06.jpg': {
+					word.append($('<img/>', {'src': '../medias/img/6_start.png'}))
 						.css({'top':'500px'});
 				} break;
 				default: break;
@@ -93,7 +96,6 @@ $(function(){
 	}).mouseleave(function () {
 		word.empty();
 	});
-
 	
 	_.showWord(iPost, 'https://imisslovelove.github.io/cn');
 	_.showWord(iAbout, 'https://imisslovelove.github.io/cn/about');
@@ -118,13 +120,5 @@ $(function(){
 		$('#wrap, #imgBox').hide();
 		$('#device, .device').show();
 	}
-	
-});
-
-    _.showWord($iPost, '故事的主角总是善意地提醒周围人恶意的目光', 'https://imisslovelove.github.io/cn');
-    _.showWord($iAbout, '偶尔，他也总是自欺欺人！', 'https://imisslovelove.github.io/cn/about');
-    _.showWord($iTags, '他却用温暖的内心感染着身边的每个人', 'https://imisslovelove.github.io/cn/tags');
-    _.showWord($iEn, '然后，他在你的心中驻留。', 'https://imisslovelove.github.io/en');
-    _.showWord($iHoungking, '阳光便成为你一生的行程。', 'http://houngking.ml');
 
 });
