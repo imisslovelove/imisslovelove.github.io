@@ -1,8 +1,8 @@
 /**
- * Created by HoungKing Hsi on 10/13/14.
- * Updated by HoungKing Hsi on 10/16/14.
- * Updated by HoungKing on 12/11/2014.
- * Updated by HoungKing on 01/17/2015.// add the mobile device and the adapt layout
+ * Created by houngking on 10/13/2014.
+ * Updated by houngking on 10/16/2014.
+ * Updated by houngking on 12/11/2014.
+ * Updated by houngking on 01/17/2015.// add the mobile device and the adapt layout
  */
 $(function(){
 	var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-en'), word = $('#word');
@@ -42,7 +42,6 @@ $(function(){
 				} break;
 				case '../medias/img/05.jpg': {
 					word.append($('<img/>', {'src': '../medias/img/5_start.png'}))
-						.css({'top':'500px'});
 				} break;
 				case '../medias/img/06.jpg': {
 					word.append($('<img/>', {'src': '../medias/img/6_start.png'}))
@@ -97,16 +96,16 @@ $(function(){
 	}).mouseleave(function () {
 		word.empty();
 	});
-	
+
 	_.showWord(iPost, 'https://imisslovelove.github.io/cn');
 	_.showWord(iAbout, 'https://imisslovelove.github.io/cn/about');
 	_.showWord(iTags, 'https://imisslovelove.github.io/cn/tags');
 	_.showWord(iEn, 'https://imisslovelove.github.io/en');
-	_.showWord(iiHoungking, 'http://houngking.ml');
+	_.showWord(iHoungking, 'https://houngkinghsi.github.io/');
 
 	$('img').hide();
-	_.jumpToDetailed($('#chinBlog'), 'http://imisslovelove.github.io/cn');
-	_.jumpToDetailed($('#engBlog'), 'http://imisslovelove.github.io/en');
+	_.jumpToDetailed($('#chinBlog'), 'https://imisslovelove.github.io/cn');
+	_.jumpToDetailed($('#engBlog'), 'https://imisslovelove.github.io/en');
 	
 	// add the adaptable layout
 //	var bodyObj = $('body');
