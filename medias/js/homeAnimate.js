@@ -27,28 +27,7 @@ $(function(){
 				}
 			}
 			word.css('top', '');
-			switch (n) {
-				case '../medias/img/01.jpg': {
-					word.append($('<img/>', {'src': '../medias/img/1_story.png'}));
-				} break;
-				case '../medias/img/02.jpg': {
-					word.append($('<img/>', {'src': '../medias/img/2_actor.png'}));
-				} break;
-				case '../medias/img/03.jpg': {
-					word.append($('<img/>', {'src': '../medias/img/3_cheat.png'}));
-				} break;
-				case '../medias/img/04.jpg': {
-					word.append($('<img/>', {'src': '../medias/img/4_heart.png'}));
-				} break;
-				case '../medias/img/05.jpg': {
-					word.append($('<img/>', {'src': '../medias/img/5_start.png'}))
-				} break;
-				case '../medias/img/06.jpg': {
-					word.append($('<img/>', {'src': '../medias/img/6_start.png'}))
-						.css({'top':'500px'});
-				} break;
-				default: break;
-			}
+			
 
 		}, changeAdaptLayout: function (o) {
 			if (o.width() < 600) { 
