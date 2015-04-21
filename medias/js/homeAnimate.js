@@ -5,7 +5,7 @@
  * Updated by houngking on 01/17/2015.// add the mobile device and the adapt layout
  */
 $(function(){
-	var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-en'), word = $('#word');
+	var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-en'), iHoungking = $('#w-houngking'), word = $('#word');
 	
 	var _ = {
 		showWord: function(obj, link){
@@ -23,7 +23,7 @@ $(function(){
 			for (var i = 0, size = os.length; i < size; i++) {
 				var item = $(os[i]);
 				if (n === item.attr('src')) {
-					item.fadeIn(300);
+					item.fadeIn(200);
 				}
 			}
 			word.css('top', '');
@@ -56,7 +56,7 @@ $(function(){
 				$('#wrap, #imgBox').hide();
 				$('#device, .device').show();
 			}else{ 
-				
+				$('#wrap, #imgBox').show();
 				$('#device, .device').hide();
 			}
 		}, jumpToDetailed: function (obj, link) {
