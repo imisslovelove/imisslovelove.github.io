@@ -87,7 +87,11 @@ $(function(){
 	
 	//show original
 	point.mouseover(function() {
-		
+		iPost.fadeIn(200);
+		iAbout.fadeIn(600);
+		iTags.fadeIn(1000);
+		iEn.fadeIn(1400);
+		iHoungking.fadeIn(1800);
 		_.switchPic($(this).attr('data-no'), $('img', $('#imgs')));
 	}).mouseleave(function () {
 		word.empty();
@@ -114,7 +118,7 @@ $(function(){
 	// add the mobile device
 	if (isMobile.any()) {
 		$('#wrap, #imgBox').hide();
-		$('#device, .device').show();
+		
 	}
 	
 });
