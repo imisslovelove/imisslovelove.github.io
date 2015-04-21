@@ -54,7 +54,7 @@ $(function(){
 			if (o.width() < 600) { 
 				//show Chinese and English 
 				$('#wrap, #imgBox').hide();
-				$('#device, .device').show();
+				
 			}else{ 
 				$('#wrap, #imgBox').show();
 				$('#device, .device').hide();
@@ -118,7 +118,7 @@ $(function(){
 	// add the mobile device
 	if (isMobile.any()) {
 		$('#wrap, #imgBox').hide();
-		
+		$('#device, .device').show();
 	}
 	
 });
