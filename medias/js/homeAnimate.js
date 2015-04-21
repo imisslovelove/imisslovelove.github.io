@@ -54,9 +54,9 @@ $(function(){
 			if (o.width() < 600) { 
 				//show Chinese and English 
 				$('#wrap, #imgBox').hide();
-				
+				$('#device, .device').show();
 			}else{ 
-				$('#wrap, #imgBox').show();
+				
 				$('#device, .device').hide();
 			}
 		}, jumpToDetailed: function (obj, link) {
