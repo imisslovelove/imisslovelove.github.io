@@ -46,7 +46,7 @@ $(function(){
 				case '../medias/img/06.jpg': {
 					word.append($('<img/>', {'src': '../medias/img/6_start.png'}))
 				} break;
-				case '../medias/img/06.jpg': {
+				case '../medias/img/01.jpg': {
 					word.append($('<img/>', {'src': '../medias/img/1_start.png'}))
 						.css({'top':'500px'});
 				} break;
