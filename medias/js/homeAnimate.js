@@ -5,7 +5,7 @@
  * Updated by houngking on 01/17/2015.// add the mobile device and the adapt layout
  */
 $(function(){
-	var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-en'), iHoungking = $('#w-houngking'), word = $('#word');
+	var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-en'), iScience = $('#w-science'),iHoungking = $('#w-houngking'), word = $('#word');
 	
 	var _ = {
 		showWord: function(obj, link){
@@ -42,6 +42,9 @@ $(function(){
 				} break;
 				case '../medias/img/05.jpg': {
 					word.append($('<img/>', {'src': '../medias/img/5_start.png'}))
+				} break;
+				case '../medias/img/06.jpg': {
+					word.append($('<img/>', {'src': '../medias/img/6_start.png'}))
 				} break;
 				case '../medias/img/06.jpg': {
 					word.append($('<img/>', {'src': '../medias/img/6_start.png'}))
@@ -91,7 +94,8 @@ $(function(){
 		iAbout.fadeIn(600);
 		iTags.fadeIn(1000);
 		iEn.fadeIn(1400);
-		iHoungking.fadeIn(1800);
+		iScience.fadeIn(1800);
+		iHoungking.fadeIn(2200);
 		_.switchPic($(this).attr('data-no'), $('img', $('#imgs')));
 	}).mouseleave(function () {
 		word.empty();
@@ -101,11 +105,14 @@ $(function(){
 	_.showWord(iAbout, 'https://imisslovelove.github.io/cn/about');
 	_.showWord(iTags, 'https://imisslovelove.github.io/cn/tags');
 	_.showWord(iEn, 'https://imisslovelove.github.io/en');
+	_.showWord(iScience, 'https://imisslovelove.github.io/houngking');
 	_.showWord(iHoungking, 'https://houngkinghsi.github.io/');
 
 	$('img').hide();
 	_.jumpToDetailed($('#chinBlog'), 'https://imisslovelove.github.io/cn');
 	_.jumpToDetailed($('#engBlog'), 'https://imisslovelove.github.io/en');
+	_.jumpToDetailed($('#scienceBlog'), 'https://imisslovelove.github.io/houngking');
+	_.jumpToDetailed($('#about'), 'https://houngkinghsi.github.io/');
 	
 	// add the adaptable layout
 //	var bodyObj = $('body');
