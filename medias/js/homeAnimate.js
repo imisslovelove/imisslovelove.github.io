@@ -5,7 +5,7 @@
  * Updated by houngking on 01/17/2015.// add the mobile device and the adapt layout
  */
 $(function(){
-	var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-en'), iHoungking = $('#w-science'),iExperience = $('#w-experience'), word = $('#word');
+	var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-en'), iScience = $('#w-science'),iExperience = $('#w-experience'), word = $('#word');
 	
 	var _ = {
 		showWord: function(obj, link){
@@ -95,7 +95,7 @@ $(function(){
 		iTags.fadeIn(1000);
 		iEn.fadeIn(1400);
 		iScience.fadeIn(1800);
-		iHoungking.fadeIn(2200);
+		iExperience.fadeIn(2200);
 		_.switchPic($(this).attr('data-no'), $('img', $('#imgs')));
 	}).mouseleave(function () {
 		word.empty();
@@ -105,7 +105,7 @@ $(function(){
 	_.showWord(iAbout, 'https://imisslovelove.github.io/cn/about');
 	_.showWord(iTags, 'https://imisslovelove.github.io/cn/tags');
 	_.showWord(iEn, 'https://imisslovelove.github.io/en');
-	_.showWord(iHoungking, 'https://imisslovelove.github.io/houngking');
+	_.showWord(iScience, 'https://imisslovelove.github.io/houngking');
 	_.showWord(iExperience, 'https://houngkinghsi.github.io/');
 
 	$('img').hide();
