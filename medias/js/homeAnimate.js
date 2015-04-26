@@ -46,8 +46,8 @@ $(function(){
 				case '../medias/img/06.jpg': {
 					word.append($('<img/>', {'src': '../medias/img/6_start.png'}))
 				} break;
-				case '../medias/img/10.jpg': {
-					word.append($('<img/>', {'src': '../medias/img/01_start.png'}))
+				case '../medias/img/07.jpg': {
+					word.append($('<img/>', {'src': '../medias/img/7_start.png'}))
 						.css({'top':'500px'});
 				} break;
 				default: break;
