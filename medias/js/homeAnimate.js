@@ -101,18 +101,18 @@ $(function(){
 		word.empty();
 	});
 
-	_.showWord(iPost, 'https://imisslovelove.github.io/cn');
-	_.showWord(iAbout, 'https://imisslovelove.github.io/cn/about');
-	_.showWord(iTags, 'https://imisslovelove.github.io/cn/tags');
-	_.showWord(iEn, 'https://imisslovelove.github.io/en');
-	_.showWord(iScience, 'https://imisslovelove.github.io/houngking');
-	_.showWord(iExperience, 'https://houngkinghsi.github.io/');
+	_.showWord(iPost, 'http://www.indeex.org/cn');
+	_.showWord(iAbout, 'http://www.indeex.org/cn/about');
+	_.showWord(iTags, 'http://indeex.org/cn/tags');
+	_.showWord(iEn, 'http://www.indeex.org/en');
+	_.showWord(iScience, 'http://www.indeex.org/houngking');
+	_.showWord(iExperience, 'http://www.houngking.cc/');
 
 	$('img').hide();
-	_.jumpToDetailed($('#chinBlog'), 'https://imisslovelove.github.io/cn');
-	_.jumpToDetailed($('#engBlog'), 'https://imisslovelove.github.io/en');
-	_.jumpToDetailed($('#scienceBlog'), 'https://imisslovelove.github.io/houngking');
-	_.jumpToDetailed($('#about'), 'https://houngkinghsi.github.io/');
+	_.jumpToDetailed($('#chinBlog'), 'http://www.indeex.org/cn');
+	_.jumpToDetailed($('#engBlog'), 'http://www.indeex.org/en');
+	_.jumpToDetailed($('#scienceBlog'), 'http://www.indeex.org/houngking');
+	_.jumpToDetailed($('#about'), 'http://www.houngking.cc/');
 	
 	// add the adaptable layout
 //	var bodyObj = $('body');
