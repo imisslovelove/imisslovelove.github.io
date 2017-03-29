@@ -106,13 +106,13 @@ $(function(){
 	_.showWord(iTags, 'http://indeex.org/cn/tags');
 	_.showWord(iEn, 'http://www.indeex.org/en');
 	_.showWord(iScience, 'http://www.indeex.org/houngking');
-	_.showWord(iExperience, 'http://www.houngking.cc/');
+	_.showWord(iExperience, 'http://www.hungking.cc/');
 
 	$('img').hide();
 	_.jumpToDetailed($('#chinBlog'), 'http://www.indeex.org/cn');
 	_.jumpToDetailed($('#engBlog'), 'http://www.indeex.org/en');
 	_.jumpToDetailed($('#scienceBlog'), 'http://www.indeex.org/houngking');
-	_.jumpToDetailed($('#about'), 'http://www.houngking.cc/');
+	_.jumpToDetailed($('#about'), 'http://www.hungking.cc/');
 	
 	// add the adaptable layout
 //	var bodyObj = $('body');
